@@ -1,0 +1,57 @@
+.DetailsBlogDes {
+   @screen laptop {
+      padding-top: calc(5rem * var(--scale));
+   }
+}
+
+.DetailsBlogDes-image {
+   @screen laptop {
+      @apply relative;
+      padding-top: calc(4rem * var(--scale));
+
+      margin: 0 auto;
+      height: calc(48.8rem * var(--scale));
+   }
+}
+
+.DetailsBlogDes-Tips {
+   @screen laptop {
+      @apply flex justify-center items-center bg-white absolute bottom-0;
+      width: calc(9.7rem * var(--scale));
+   }
+}
+.DetailsBlogDes-span {
+   @screen laptop {
+      @apply font-semibold    uppercase text-[#292929];
+      font-size: calc(2rem * var(--scale));
+   }
+}
+
+.DetailsBlogDes-containertext {
+   @apply pt-[3.5rem] pb-[3rem];
+}
+
+.DetailsBlogDes-title {
+   @screen laptop {
+      @apply font-extrabold  text-[#292929] leading-[3.287rem];
+      font-size: calc(4rem * var(--scale));
+      padding-top: calc(1.5rem * var(--scale));
+      padding-bottom: calc(1rem * var(--scale));
+   }
+}
+
+.DetailsBlogDes-content {
+   @apply font-light text-[1.9rem] leading-[3.04rem];
+   color: #606060;
+   p {
+      @apply py-[1rem];
+   }
+   strong {
+      @apply font-semibold;
+   }
+   @screen laptop {
+      columns: 2;
+      column-gap: calc(4rem * var(--scale));
+      padding-top: calc(2.5rem * var(--scale));
+   }
+}

@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_section_home_chooses",
+  "info": {
+    "displayName": "home_choose",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "text_one": {
+      "type": "text"
+    },
+    "text_two": {
+      "type": "text"
+    },
+    "list_choose": {
+      "type": "richtext"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_section_home_prins",
+  "info": {
+    "displayName": "home_prin",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "text"
+    },
+    "title": {
+      "type": "text"
+    },
+    "text": {
+      "type": "text"
+    },
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title_mobile": {
+      "type": "text"
+    }
+  }
+}

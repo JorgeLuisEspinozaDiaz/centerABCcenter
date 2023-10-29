@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_section_home_blogs",
+  "info": {
+    "displayName": "home_blog",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    }
+  }
+}

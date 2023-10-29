@@ -1,0 +1,90 @@
+.CardBlog {
+   @apply w-full h-[33.415rem] p-[1.2rem] cursor-pointer relative;
+   box-shadow: 0px 2.56054px 32.0068px rgba(65, 125, 220, 0.15);
+   border-radius: 12.8027px;
+
+   max-width: 46rem;
+
+   &:hover {
+      .img {
+         scale: 1.1;
+         transition: all 0.3s ease-in-out;
+      }
+      .CardBlog-buttomspan {
+         @apply text-blue;
+         transition: all 0.3s ease-in-out;
+      }
+      .CardBlog-i {
+         @apply text-blue;
+         transition: all 0.3s ease-in-out;
+      }
+   }
+
+   .img {
+      transition: all 0.3s ease-in-out;
+   }
+
+   @screen laptop {
+      height: calc(52.2rem * var(--scale));
+   }
+}
+.CardBlog-container {
+   @apply px-[2rem] flex flex-col gap-y-[1.2rem] pt-[1.152rem];
+   @screen laptop {
+      gap: calc(1.8rem * var(--scale));
+      padding-top: calc(1.8rem * var(--scale));
+   }
+}
+
+.CardBlog-image {
+   @apply overflow-hidden h-[17.028rem];
+   border-radius: 14.083px;
+   @screen laptop {
+      height: calc(26.6rem * var(--scale));
+   }
+}
+
+.CardBlog-date {
+   @apply flex gap-[1rem] items-center;
+}
+.CardBlog-calendartex {
+   @apply font-quicksand text-[1.216rem] text-lead leading-[1.946rem] font-normal;
+
+   @screen laptop {
+      font-size: calc(1.9rem * var(--scale));
+      line-height: calc(3.04rem * var(--scale));
+   }
+}
+
+.CardBlog-title {
+   @apply font-outfit text-[1.6rem] text-black leading-[2.016rem] font-bold;
+   @screen laptop {
+      font-size: calc(2.5rem * var(--scale));
+      line-height: calc(3.15rem * var(--scale));
+   }
+}
+.CardBlog-line {
+   @apply text-[#D9D9D9];
+}
+
+.CardBlog-buttom {
+   @apply flex gap-[.5rem] absolute bottom-[2rem] items-center;
+   i {
+      @apply text-[1rem];
+      transition: all 0.3s ease-in-out;
+      @screen laptop {
+         font-size: calc(1.2rem * var(--scale));
+      }
+   }
+   @screen laptop {
+      bottom: calc(3.5rem * var(--scale));
+   }
+}
+.CardBlog-buttomspan {
+   @apply font-quicksand text-[1.216rem] text-black2 leading-[1.946rem] font-semibold;
+   transition: all 0.3s ease-in-out;
+   @screen laptop {
+      font-size: calc(1.9rem * var(--scale));
+      line-height: calc(3.04rem * var(--scale));
+   }
+}

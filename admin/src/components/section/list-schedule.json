@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_section_list_schedules",
+  "info": {
+    "displayName": "list_schedule",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "hour": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    },
+    "title_list": {
+      "type": "string"
+    }
+  }
+}

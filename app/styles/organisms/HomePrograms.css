@@ -1,0 +1,134 @@
+.HomePrograms {
+   margin-top: 25px;
+   @screen laptop {
+      @apply bg-[#FFF9EB];
+      padding-bottom: calc(8rem * var(--scale));
+      margin-top: calc(-26rem * var(--scale));
+   }
+}
+
+.HomePrograms-vectorsmobile {
+   @apply relative  w-full z-[3];
+
+   @screen tablet {
+      @apply top-0 left-0;
+   }
+   @screen laptop {
+      @apply hidden;
+   }
+}
+
+.HomePrograms-vectors {
+   @apply hidden;
+   @screen laptop {
+      @apply w-full block;
+      padding-top: calc(3rem * var(--scale));
+      padding-bottom: calc(3rem * var(--scale));
+   }
+}
+
+.HomePrograms-blueprograms {
+   @apply hidden;
+   @screen laptop {
+      @apply block absolute w-[99%];
+      top: calc(15rem * var(--scale));
+      left: calc(1rem * var(--scale));
+   }
+   @screen desktop {
+      @apply block absolute w-[99%];
+      top: calc(14rem * var(--scale));
+      left: calc(1rem * var(--scale));
+   }
+}
+
+.HomePrograms-imagprog {
+   @apply hidden;
+   @screen laptop {
+      @apply block absolute w-[95%];
+      top: calc(185rem * var(--scale));
+      left: calc(4rem * var(--scale));
+      @screen desktop {
+         top: calc(175rem * var(--scale));
+         left: calc(4rem * var(--scale));
+      }
+   }
+}
+
+.HomePrograms-starprograms {
+   @apply hidden;
+   @screen laptop {
+      @apply block absolute w-[98%];
+      bottom: calc(6rem * var(--scale));
+      left: calc(1rem * var(--scale));
+   }
+}
+
+.HomePrograms-conta-title {
+   @apply flex flex-col justify-center items-center;
+   /* 
+   @screen tablet {
+      @apply pt-[5rem];
+   } */
+   @screen laptop {
+      padding-top: calc(12rem * var(--scale));
+   }
+}
+
+.HomePrograms-title {
+   @apply text-[1.4rem] font-semibold font-quicksand text-blue text-center;
+   @screen laptop {
+      font-size: calc(1.7rem * var(--scale));
+      line-height: calc(2.72rem * var(--scale));
+   }
+}
+.HomePrograms-subtitle {
+   @apply text-[2.5rem] font-bold font-outfit text-black2 text-center leading-[2.775rem];
+   @screen laptop {
+      font-size: calc(4rem * var(--scale));
+      line-height: calc(5.04rem * var(--scale));
+   }
+}
+.HomePrograms-vector {
+   @apply w-[8.139rem] py-[1rem];
+   @screen laptop {
+      width: calc(8.139rem * var(--scale));
+   }
+}
+.HomePrograms-container-card {
+   @apply flex flex-col gap-[2.535rem] pt-[2.73rem] pb-[11rem];
+
+   .CardPrograms {
+      &:nth-child(2) {
+         .CardPrograms-icons {
+            @apply bg-[#FF4880];
+         }
+      }
+
+      &:last-child {
+         .CardPrograms-icons {
+            @apply bg-[#78D72A];
+         }
+      }
+   }
+
+   @screen tablet {
+      @apply pt-[rem];
+   }
+
+   @screen laptop {
+      gap: calc(5rem * var(--scale));
+      z-index: 50;
+      position: relative;
+      padding-bottom: calc(13rem * var(--scale));
+   }
+}
+
+.home-containers {
+   @apply bg-[#FFF9EB];
+
+   /* @screen tablet {
+      margin-top: -2rem;
+      position: relative;
+      z-index: 3;
+   } */
+}

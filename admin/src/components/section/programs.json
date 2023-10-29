@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_section_programs",
+  "info": {
+    "displayName": "programs"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "placeholder": {
+      "type": "string"
+    }
+  }
+}

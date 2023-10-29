@@ -1,0 +1,82 @@
+.HomeBlog-fond {
+   @screen laptop {
+      @apply bg-[url('/blogfond.jpg')]   object-cover   relative;
+      margin-top: calc(-7rem * var(--scale));
+   }
+}
+
+.HomeBlog {
+   @apply flex flex-col justify-center items-center gap-[.3rem] pt-[9rem] pb-[2rem];
+
+   @screen tablet {
+      @apply pt-[12rem];
+   }
+   @screen laptop {
+      gap: calc(1rem * var(--scale));
+      padding-top: calc(16rem * var(--scale));
+      padding-bottom: calc(7rem * var(--scale));
+   }
+}
+
+.HomeBlog-title {
+   @apply text-[1.4rem] leading-[2.24rem] font-quicksand font-semibold text-blue;
+   @screen laptop {
+      font-size: calc(1.7rem * var(--scale));
+   }
+}
+
+.HomeBlog-subtitle {
+   @apply text-[2.5rem] leading-[3.15rem] font-outfit font-bold text-black2 text-center;
+   @screen laptop {
+      font-size: calc(4rem * var(--scale));
+   }
+}
+.HomeBlog-image {
+   @apply w-[6.809rem] pt-[.5rem];
+   @screen laptop {
+      width: calc(8.139rem * var(--scale));
+   }
+}
+
+.HomeBlog-container-card {
+   @apply flex flex-col gap-[1.752rem] py-[3rem];
+
+   @screen tablet {
+      @apply grid grid-cols-2;
+   }
+   @screen laptop {
+      @apply grid grid-cols-3;
+      gap: calc(4rem * var(--scale));
+   }
+}
+
+.HomeBlogs-listflex {
+   @screen tabletlg {
+      display: block;
+      @apply flex flex-row justify-center items-center;
+   }
+   .BlogCard {
+      @apply m-0;
+   }
+
+   @screen laptop {
+      @apply justify-start items-start;
+   }
+}
+
+.HomeBlog-start {
+   @apply hidden;
+   @screen laptop {
+      @apply block w-[31.661rem] h-[38.962rem] absolute;
+      top: calc(2rem * var(--scale));
+      left: calc(-4rem * var(--scale));
+   }
+   @screen desktop {
+      top: calc(3rem * var(--scale));
+      left: calc(1rem * var(--scale));
+   }
+}
+
+.blogCardsflex {
+   @apply flex justify-center;
+}

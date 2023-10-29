@@ -1,0 +1,95 @@
+.HomeBanner {
+   @apply relative min-h-[90.7vh] flex flex-col justify-center;
+   @screen tablet {
+      @apply min-h-[94vh];
+   }
+   @screen laptop {
+      @apply min-h-[85.2vh];
+   }
+   @screen desktop {
+      @apply min-h-[86.2vh];
+   }
+}
+
+.homeBanner-video {
+   @apply absolute top-0 left-0 w-full  h-full  object-cover;
+}
+
+.homeBanner-conte {
+   @apply relative z-[2];
+
+   @screen tablet {
+      @apply flex flex-col justify-center items-center;
+   }
+
+   @screen laptop {
+      @apply justify-start items-start;
+      width: calc(115rem * var(--scale));
+   }
+}
+.HomeBanner-title {
+   @apply font-outfit font-medium text-[2.034rem] leading-[2.563rem] text-yellow;
+   @screen laptop {
+      font-size: calc(2.847rem * var(--scale));
+   }
+}
+.HomeBanner-subtitleOne {
+   @apply font-outfit font-black text-[3.1rem] leading-[4.449rem] text-textT hidden;
+   @screen laptop {
+      @apply block;
+      font-size: calc(6.342rem * var(--scale));
+      line-height: calc(7.991rem * var(--scale));
+   }
+}
+.HomeBanner-subtitleOneMobi {
+   @apply font-outfit font-black text-[3.1rem] leading-[4.449rem] text-textT;
+   @screen laptop {
+      @apply hidden;
+      font-size: calc(6.342rem * var(--scale));
+      line-height: calc(7.991rem * var(--scale));
+   }
+}
+
+.HomeBanner-subtitleTwo {
+   @apply font-outfit font-extrabold text-[2.416rem] leading-[3.045rem] text-textT block;
+   @screen laptop {
+      font-size: calc(5.534rem * var(--scale));
+      line-height: calc(6.973rem * var(--scale));
+   }
+}
+.HomeBanner-vector {
+   @apply w-[9.4rem] py-[1.3rem];
+   @screen laptop {
+      width: calc(13.061rem * var(--scale));
+   }
+}
+
+.HomeBanner-text {
+   @apply font-quicksand text-[1.5rem] font-semibold  leading-[2.4rem] text-lead pr-[3rem];
+   @screen tablet {
+      @apply text-center;
+      padding-right: 0px;
+   }
+   @screen laptop {
+      @apply text-start;
+      font-size: calc(2rem * var(--scale));
+      line-height: calc(3.2rem * var(--scale));
+      padding-right: calc(5.7rem * var(--scale));
+      width: 70%;
+   }
+}
+
+.HomeBanner-Buttom {
+   @apply pt-[2rem];
+}
+
+/* .homeBanner-capa {
+   @apply absolute top-0 left-0 w-full h-full;
+   background: linear-gradient(
+      91.1deg,
+      #ffffff 37.3%,
+      rgba(255, 255, 255, 0.68) 79.31%,
+      rgba(255, 255, 255, 0.330734) 94.65%
+   );
+   transform: matrix(1, 0, 0, -1, 0, 0);
+} */

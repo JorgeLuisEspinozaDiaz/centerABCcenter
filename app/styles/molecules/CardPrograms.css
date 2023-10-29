@@ -1,0 +1,133 @@
+.CardPrograms {
+   @apply bg-[#FFFFFF] w-full h-auto px-[1rem] pt-[2.6rem];
+   border-radius: 20px;
+   @screen laptop {
+      @apply grid grid-cols-2;
+      grid-template-areas: 'image content';
+      align-items: end;
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-top: 0px;
+   }
+}
+
+.CardPrograms-text {
+   grid-area: content;
+}
+.CardPrograms-image {
+   grid-area: image;
+   @apply pt-[2.5rem] w-[80%] mx-auto;
+
+   @screen tablet {
+      @apply w-[60%] mx-auto;
+   }
+
+   @screen laptop {
+      @apply w-[100%] mx-auto;
+   }
+   /* @apply w-[19.998rem] h-[24.412rem]; */
+   /* @screen laptop {
+      @apply w-full h-full  mx;
+   } */
+}
+
+.card-2 {
+   grid-template-areas: 'content image';
+}
+
+.CardPrograms-text {
+   @screen laptop {
+      padding-top: calc(5.9rem * var(--scale));
+      padding-bottom: calc(5.9rem * var(--scale));
+      padding-left: calc(5.9rem * var(--scale));
+      padding-right: calc(5.9rem * var(--scale));
+   }
+}
+.CardPrograms-icons {
+   @apply w-[3.3rem] h-[3.156rem] bg-yellow rounded-full p-[.7rem] flex justify-center items-center;
+
+   @screen laptop {
+      width: calc(5.4rem * var(--scale));
+      height: calc(5.4rem * var(--scale));
+   }
+}
+.CardPrograms-title {
+   @apply font-outfit text-[1.8rem] leading-[2.268rem] text-black2 font-bold;
+   @screen laptop {
+      font-size: calc(3rem * var(--scale));
+      line-height: calc(3.78rem * var(--scale));
+   }
+}
+.CardPrograms-conta-title {
+   @apply flex gap-[1rem] items-center;
+}
+.CardPrograms-contact {
+   @apply pt-[1.5rem];
+   p {
+      @apply text-[1.5rem] text-center font-normal font-quicksand text-lead leading-[2.4rem];
+      @screen laptop {
+         text-align: start;
+         font-size: calc(1.9rem * var(--scale));
+         line-height: calc(3.04rem * var(--scale));
+      }
+   }
+   @screen laptop {
+      padding-top: calc(1rem * var(--scale));
+   }
+}
+
+.CardPrograms-container-accordion {
+   @apply flex flex-col gap-[0.8rem] pt-[1rem] pb-[2rem];
+}
+
+.accordion-header {
+   @apply pt-[1.3rem] pb-[1.4rem] pl-[1.5rem] pr-[2rem] bg-[#F7F7F7] cursor-pointer   flex items-center justify-between flex-row-reverse;
+   border-radius: 16.0992px;
+   transition: background-color 0.3s ease;
+
+   @screen laptop {
+      padding-top: calc(1.2rem * var(--scale));
+      padding-bottom: calc(1.2rem * var(--scale));
+      padding-left: calc(1.2rem * var(--scale));
+      padding-right: calc(2rem * var(--scale));
+   }
+   i {
+      @apply text-[.7rem] text-lead;
+   }
+
+   &.active {
+      @apply bg-yellow text-white;
+   }
+}
+.accordion-title {
+   @apply text-[1.529rem] font-normal font-quicksand leading-[1.896rem] text-lead w-[90%];
+   @screen laptop {
+      font-size: calc(1.9rem * var(--scale));
+      line-height: calc(3.04rem * var(--scale));
+   }
+   .active {
+      @apply text-white;
+   }
+}
+.accordion-content {
+   max-height: 0;
+   overflow: hidden;
+   transition: all 0.4s ease-in-out;
+}
+
+.accordion-title .active {
+   @apply text-white;
+}
+
+.accordion-text {
+   @apply text-[1.529rem] p-[1rem] font-normal block font-quicksand leading-[2.447rem] text-lead;
+   @screen laptop {
+      font-size: calc(1.9rem * var(--scale));
+   }
+}
+
+.accordion-icon {
+   &.active {
+      @apply text-white;
+   }
+}

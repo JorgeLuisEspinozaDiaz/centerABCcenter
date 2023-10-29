@@ -1,0 +1,60 @@
+.footer {
+   @apply bg-[#1A1A1A];
+}
+
+.footer-content {
+   @apply flex gap-[1rem] items-center;
+
+   .icon-mess {
+      @apply text-[1.3rem];
+   }
+   i {
+      @apply text-[1.8rem];
+      color: #d0d0d0;
+      @screen laptop {
+         font-size: calc(2rem * var(--scale));
+         color: #ffffff;
+      }
+   }
+}
+.footer-span {
+   @apply text-[1.4rem] leading-[1.64rem] font-outfit font-light;
+   color: rgba(255, 255, 255, 0.6);
+   @screen laptop {
+      font-size: calc(1.731rem * var(--scale));
+      color: #ffffff;
+   }
+}
+.footer-container {
+   @apply flex flex-col gap-[1.5rem] pt-[3.4rem] pb-[3.7rem];
+   @screen laptop {
+      @apply flex-row items-center;
+      gap: calc(5rem * var(--scale));
+      padding-top: calc(6rem * var(--scale));
+      padding-bottom: calc(6rem * var(--scale));
+      padding-left: calc(2rem * var(--scale));
+   }
+   @screen desktop {
+      gap: calc(7rem * var(--scale));
+   }
+}
+
+.footer-social {
+   i {
+      font-size: 2.1rem;
+      @apply text-[#D0D0D0];
+   }
+   @screen laptop {
+      order: -1;
+      i {
+         font-size: 1.9rem;
+         @apply text-[#FFFFFF];
+      }
+   }
+
+   @screen desktop {
+      i {
+         font-size: 2.5rem;
+      }
+   }
+}

@@ -1,0 +1,197 @@
+.HomeSchedule{
+    @apply pt-[5.5rem] pb-[9rem] relative;
+    &-icon-1, &-icon-2{
+        @apply absolute hidden;
+        img{
+            width: 100%;
+        }
+        @screen laptop{
+            @apply block;
+        }
+    }
+    &-icon-1{
+        top: calc(7rem * var(--scale));
+        left: calc(.5rem * var(--scale));
+        width: calc(27rem * var(--scale));
+    }
+    &-icon-2{
+        bottom: calc(4rem * var(--scale));
+        right: 0;
+        width: calc(17rem * var(--scale));
+    }
+    @screen laptop{
+        padding-top: calc(9rem * var(--scale));
+        padding-bottom: calc(14rem * var(--scale));
+    }
+    &-head{
+        @apply relative;
+        &-circles{
+            @apply absolute top-[-1.5rem] left-0 w-full flex justify-center gap-[2rem];
+            span{
+                @apply w-[3rem] h-[3rem] bg-white rounded-full block; 
+            }
+            @screen laptop{
+                top: calc(-2.5rem * var(--scale));
+                column-gap: calc(6rem * var(--scale));
+                span{
+                    width: calc(5rem * var(--scale));
+                    height: calc(5rem * var(--scale));
+                }
+            }
+        }
+        @screen laptop{
+            @apply w-[55%] mx-auto;
+        }
+    }
+    &-title{
+        @apply text-[2.5rem] leading-[3.15rem] font-outfit font-bold text-black2 text-center;
+        @screen laptop {
+            font-size: calc(4rem * var(--scale));
+        }
+    }
+    &-image{
+        @apply w-[6.809rem] pt-[.5rem] mx-auto;
+        @screen laptop {
+            width: calc(8.139rem * var(--scale));
+            padding-top: calc(1.8rem * var(--scale));
+        }
+    }
+    &-text{
+        @apply text-center mt-[1.5rem] leading-[1.5];
+        @screen laptop{
+            margin-top: calc(2.5rem * var(--scale));
+        }
+    }
+    &-list{
+        @apply pt-[2.5rem];
+        @screen tabletlg{
+            @apply flex justify-between;
+        }
+        @screen laptop{
+            padding-top: calc(4.5rem * var(--scale));
+        }
+    }
+    &-schedule{
+        @apply mb-[4rem] bg-[#FFF9EB] overflow-hidden;
+        border-radius: 0 0 1.5rem 1.5rem;
+        @screen laptop{
+            margin-bottom: 0;
+        }
+        &.title-afternoon{
+            @apply bg-[#DEEBFF];
+            .HomeSchedule-schedule-list{
+                border-color: #5798FE;
+            }
+            .HomeSchedule-schedule-head{
+                @apply bg-blue;
+                p{
+                    border-color: #5798FE;
+                    @apply text-blue;
+                }
+            }
+            .HomeSchedule-schedule-item-info{
+                .after-slash{
+                    @apply bg-blue;
+                }
+            }
+        }
+        &-head{
+            @apply bg-yellow text-center font-outfit px-[2.5rem] relative h-[9rem] flex items-center justify-center;
+            border-radius: 20px 20px 0 0;
+            h3{
+                @apply text-white mt-[3px] text-[2.1rem] leading-[1.2] font-bold inline-flex items-center;
+                figure{
+                    @apply w-[2.5rem] mr-[1rem];
+                }
+            }
+            p{
+                border: 1.6px solid #FEAD00;
+                transform: translateX(-50%);
+                @apply absolute bottom-[-2.3rem] left-[50%] rounded-[3rem] bg-white px-[1.5rem] py-[1rem] text-yellow leading-[1.2] font-semibold;
+            }
+            @screen laptop{
+                padding: 0 calc(4.5rem * var(--scale));
+                height: calc(13.5rem * var(--scale));
+                h3{
+                    font-size: calc(3.1rem * var(--scale));
+                    figure{
+                        width: calc(3rem * var(--scale));
+                    }
+                }
+                p{
+                    padding: calc(1.3rem * var(--scale)) calc(2.8rem * var(--scale));
+                    bottom: calc(-3rem * var(--scale));
+                }
+            }
+        }
+        &-content{
+            @apply py-[1.5rem] px-[1rem];
+            @screen laptop{
+                padding: calc(1.7rem * var(--scale));
+                height: calc(100% - 13.5rem * var(--scale))
+            }
+        }
+        &-list{
+            @apply px-[1rem] py-[2rem];
+            border: 1.251px dashed #FEAD00;
+            border-radius: 0 0 1rem 1rem;
+            @screen laptop{
+                padding: calc(4rem * var(--scale)) calc(2.5rem * var(--scale));
+                height: 100%;
+            }
+        }
+        &-item{
+            @apply flex justify-between mb-[1.5rem];
+            &:last-child{
+                @apply mb-0;
+            }
+            @screen laptop{
+                margin-bottom: calc(2rem * var(--scale));
+            }
+            &-hour{
+                @apply w-[8rem] text-[#909090] font-medium mt-[1rem];
+                @screen laptop{
+                    width: calc(10.5rem * var(--scale));
+                }
+            }
+            &-info{
+                width: calc(100% - 8.5rem);
+                @screen laptop{
+                    width: calc(100% - 12rem * var(--scale));
+                }
+                @apply relative pl-[1em];
+                &:before{
+                    content: '';
+                    @apply absolute w-[1px] h-[4rem] top-0 left-0;
+                    background: rgba(96, 96, 96, .6)
+                }
+                h4{
+                    @apply text-[1.6rem] text-lead font-semibold leading-[1.2];
+                }
+                p{
+                    @apply text-lead;
+                }
+                .after-slash{
+                    width: calc(100% + 9.5rem);
+                    margin-left: -9.5rem;
+                    @apply block text-center my-[1rem] p-[1rem] bg-yellow text-white uppercase font-bold rounded-[1.5rem]; 
+                    @screen laptop{
+                        width: calc(100% + 14rem * var(--scale));
+                        margin-left: calc(-14rem * var(--scale));
+                        margin-top: calc(1.5rem * var(--scale));
+                        margin-bottom: calc(1.5rem * var(--scale));
+                    }
+                }
+                @screen laptop{
+                    padding-left: calc(2rem * var(--scale));
+                    h4{
+                        font-size: calc(1.9rem * var(--scale));
+                    }
+                }
+            }
+        }
+        @screen tabletlg{
+            @apply w-[46.5%];
+        }
+    }
+}

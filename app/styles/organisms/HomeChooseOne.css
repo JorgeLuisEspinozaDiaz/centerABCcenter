@@ -1,0 +1,111 @@
+.HomeChooseOne {
+   @apply relative;
+   @screen laptop {
+      @apply grid grid-cols-2 gap-x-[5.4rem];
+      padding-top: calc(5rem * var(--scale));
+      padding-bottom: calc(4rem * var(--scale));
+   }
+   ul {
+      @apply flex flex-col gap-[1rem] text-lead;
+      @screen laptop {
+         padding-top: calc(1rem * var(--scale));
+      }
+   }
+   li {
+      @apply text-lead font-normal relative pl-[3rem] text-[1.5rem];
+      @screen laptop {
+         font-size: calc(1.9rem * var(--scale));
+      }
+      &:before {
+         content: '\e90b';
+         font-family: icomoon !important;
+         @apply w-[1.925rem] h-[1.925rem] rounded-full bg-yellow absolute top-[3px] left-0 flex items-center justify-center text-white text-[8px];
+      }
+   }
+}
+.HomeChooseOne-containerText {
+   @apply flex flex-col gap-[1rem];
+   @screen laptop {
+      gap: calc(1rem * var(--scale));
+   }
+}
+
+.HomeChooseOne-containerSubtitle {
+   @apply p-[1rem] flex flex-col gap-[1.6rem];
+   @screen laptop {
+      padding-left: 0;
+      padding-right: calc(2rem * var(--scale));
+   }
+}
+
+.HomeChooseOne-title {
+   @apply font-quicksand text-[1.4rem] font-semibold leading-[2.24rem] text-blue;
+   @screen laptop {
+      font-size: calc(1.7rem * var(--scale));
+   }
+}
+.HomeChooseOne-subtitle {
+   @apply font-outfit font-bold text-[2.5rem] leading-[3.15rem] text-black2;
+   @screen laptop {
+      font-size: calc(4rem * var(--scale));
+   }
+}
+
+.HomeChooseOne-image {
+   @apply w-[8.139rem];
+   @screen laptop {
+      padding-top: calc(1rem * var(--scale));
+      width: calc(8.139rem * var(--scale));
+   }
+}
+
+.HomeChooseOne-textOne {
+   @apply text-[1.5rem] leading-[2.4rem] font-quicksand font-normal text-lead;
+   @screen laptop {
+      font-size: calc(1.9rem * var(--scale));
+      line-height: calc(3.04rem * var(--scale));
+   }
+}
+.HomeChooseOne-textTwo {
+   @apply text-[1.5rem] leading-[2.4rem] font-quicksand font-normal text-lead;
+   @screen laptop {
+      font-size: calc(1.9rem * var(--scale));
+      line-height: calc(3.04rem * var(--scale));
+   }
+}
+.HomeChooseOne-imageBoy {
+   @apply pt-[3.9rem];
+
+   @screen tablet {
+      @apply w-[80%] mx-auto;
+   }
+   @screen laptop {
+      padding-top: 0;
+      @apply w-[100%];
+   }
+}
+
+.HomeChooseOne-images {
+   @apply w-[14.5rem] mx-auto;
+   position: relative;
+   top: -2.7rem;
+   @screen laptop {
+      @apply hidden;
+   }
+}
+
+.HomeChooseOne-icon {
+   position: absolute;
+   top: 15%;
+   left: 45%;
+   transform: translate(-50%, 50%);
+   @apply text-[#606060];
+}
+
+.HomeChooseOne-imagedes {
+   @apply hidden;
+   @screen laptop {
+      @apply block w-[28.251rem] mx-auto relative;
+      top: -5.1rem;
+   }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_section_home_programs",
+  "info": {
+    "displayName": "home_programs",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "subtitle": {
+      "type": "text"
+    }
+  }
+}

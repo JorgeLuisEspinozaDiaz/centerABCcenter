@@ -1,0 +1,82 @@
+.Header {
+   @apply pl-[2rem] h-[6rem] !sticky  w-full bg-withes;
+   top: 0;
+   z-index: 999;
+   transition: background-color 0.5s ease;
+   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.15);
+   @media screen(laptop) {
+      height: calc(9.6rem * var(--scale));
+      padding: calc(0rem * var(--scale));
+      @apply !bg-white flex items-center;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   }
+
+   &-ctn {
+      @apply relative w-full flex justify-between items-center h-[6rem];
+      @media screen(laptop) {
+         @apply p-0 w-[78.2%] mx-auto;
+         max-width: 147.6rem;
+         height: 100%;
+      }
+
+      .socials {
+         @apply flex gap-[1rem] absolute justify-center items-start;
+         right: 8rem;
+         top: 1.9rem;
+         i {
+            @apply text-blue;
+         }
+         @media screen(laptop) {
+            @apply hidden;
+         }
+         &.isActive {
+            z-index: 10;
+            top: 1.9rem;
+            .switch-lang__selected {
+               @apply bg-white;
+            }
+            .socials__link {
+               @apply text-white text-[2.75rem];
+            }
+         }
+      }
+      .socials__link {
+         @apply text-[2.75rem] text-white;
+         transition: all 0.5s ease;
+      }
+      .logoCont {
+         @apply w-[14.5rem] h-[4.4rem] relative;
+         z-index: 2;
+         @media screen(laptop) {
+            @apply hidden;
+            width: calc(25.3rem * var(--scale));
+            height: calc(7.6rem * var(--scale));
+            left: calc(-1rem * var(--scale));
+         }
+      }
+   }
+
+   &-menuIcon {
+      @apply absolute z-10;
+      right: 0;
+      top: 0;
+      @media screen(laptop) {
+         @apply hidden;
+      }
+   }
+
+   &-overlay {
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      @apply fixed inset-0 bg-black/40 pointer-events-none w-screen h-screen;
+      z-index: -1;
+      @media screen(laptop) {
+         @apply hidden;
+      }
+
+      &.isActive {
+         opacity: 1;
+         @apply pointer-events-auto;
+      }
+   }
+}

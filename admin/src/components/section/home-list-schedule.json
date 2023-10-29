@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_section_home_list_schedules",
+  "info": {
+    "displayName": "home_list_schedule",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "schedule": {
+      "type": "string"
+    },
+    "list_schedule": {
+      "displayName": "list_schedule",
+      "type": "component",
+      "repeatable": true,
+      "component": "section.list-schedule"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "img": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

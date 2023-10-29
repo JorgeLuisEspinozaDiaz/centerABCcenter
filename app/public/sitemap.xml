@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+      <url>
+              <loc>http://localhost:3000/</loc>
+            </url>
+<url>
+              <loc>http://localhost:3000/contact</loc>
+            </url>
+<url>
+              <loc>http://localhost:3000/blog/unveiling-the-wonders-of-early-brain-development-1</loc>
+            </url>
+<url>
+              <loc>http://localhost:3000/blog/unveiling-the-wonders-of-early-brain-development-2</loc>
+            </url>
+<url>
+              <loc>http://localhost:3000/blog/unveiling-the-wonders-of-early-brain-development-3</loc>
+            </url>
+    </urlset>

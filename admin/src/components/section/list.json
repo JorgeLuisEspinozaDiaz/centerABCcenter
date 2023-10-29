@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_section_lists",
+  "info": {
+    "displayName": "list",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "schedule": {
+      "type": "string"
+    }
+  }
+}

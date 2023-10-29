@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_section_list_questions",
+  "info": {
+    "displayName": "list_questions"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    }
+  }
+}

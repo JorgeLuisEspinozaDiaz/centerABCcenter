@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_section_home_schedules",
+  "info": {
+    "displayName": "home_schedule",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "text"
+    }
+  }
+}

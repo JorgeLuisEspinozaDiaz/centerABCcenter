@@ -1,0 +1,59 @@
+.HomeMap {
+   @screen laptop {
+      @apply relative;
+   }
+}
+
+.HomeMap-bloq {
+   @apply bg-[url('/bgmap.png')] bg-no-repeat bg-cover pt-[3rem] pb-[3.464rem] pl-[5.9rem]  pr-[6.4rem] flex flex-col  items-center gap-[1rem];
+
+   @screen laptop {
+      @apply absolute;
+      right: calc(25.8rem * var(--scale));
+      top: calc(10.8rem * var(--scale));
+      height: calc(33.3rem * var(--scale));
+      width: calc(40.6rem * var(--scale));
+      padding-top: calc(5.1rem * var(--scale));
+      padding-bottom: calc(5rem * var(--scale));
+      padding-right: calc(4.8rem * var(--scale));
+      padding-left: calc(4.8rem * var(--scale));
+      border-radius: 20px;
+   }
+}
+.HomeMap-title {
+   @apply text-[2.5rem] font-bold leading-[3.15rem] font-outfit text-withes text-center;
+   @screen laptop {
+      font-size: calc(4rem * var(--scale));
+      line-height: calc(5.04rem * var(--scale));
+   }
+}
+.HomeMap-subtitle {
+   @apply text-[1.5rem] font-medium leading-[2.4rem] font-quicksand text-withes  text-center;
+   @screen laptop {
+      font-size: calc(1.9rem * var(--scale));
+      line-height: calc(3.04rem * var(--scale));
+   }
+}
+
+.HomeMap-icon {
+   @apply w-[2.188rem] h-[2.539rem] mt-[.5rem];
+   @screen laptop {
+      width: calc(2.375rem * var(--scale));
+      height: calc(2.703rem * var(--scale));
+   }
+}
+
+.HomeMap-text {
+   @apply text-[1.5rem] font-semibold leading-[2.4rem] font-quicksand text-withes  text-center;
+   @screen laptop {
+      font-size: calc(1.9rem * var(--scale));
+      line-height: calc(3.04rem * var(--scale));
+   }
+}
+
+.HomeMap-maps {
+   @apply w-full h-[44.5rem];
+   @screen laptop {
+      height: calc(54.8rem * var(--scale));
+   }
+}

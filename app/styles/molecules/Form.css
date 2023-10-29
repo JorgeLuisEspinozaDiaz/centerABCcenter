@@ -1,0 +1,85 @@
+.Form {
+   @apply grid grid-cols-1 gap-[1rem] pt-[1.2rem];
+   @screen laptop {
+      gap: calc(1.7rem * var(--scale));
+   }
+   &-buttom {
+      @apply pb-[2rem] pt-[.5rem] flex gap-[1.5rem];
+      @screen laptop {
+         padding-top: 0px;
+         padding-bottom: 0px;
+      }
+   }
+
+   &-containput {
+      @apply flex flex-col gap-[1rem];
+      @screen laptop {
+         @apply flex flex-row;
+         gap: calc(1.9rem * var(--scale));
+      }
+   }
+}
+
+.formInput {
+   height: 4.8rem;
+   border-radius: 0.5rem;
+   padding-left: 1.6rem;
+   padding-right: 1.6rem;
+   font-size: 1.6rem;
+   border: 1px solid #bcbcbc;
+   background-color: #ffffff;
+   @screen laptop {
+      height: calc(4.8rem * var(--scale));
+      font-size: calc(1.8rem * var(--scale));
+   }
+}
+
+.formInput::placeholder {
+   @apply text-[#606060] font-quicksand font-normal leading-[2.4rem] text-[1.5rem];
+   @screen laptop {
+      font-size: calc(1.8rem * var(--scale));
+   }
+}
+
+.formInputarea {
+   height: 12.2rem;
+   border-radius: 0.5rem;
+   padding-left: 1.6rem;
+   padding-right: 1.6rem;
+   padding-top: 1rem;
+   font-size: 1.6rem;
+   border: 1px solid #bcbcbc;
+   background: #ffffff;
+   resize: none;
+   @screen laptop {
+      height: calc(11.8rem * var(--scale));
+      font-size: calc(1.8rem * var(--scale));
+   }
+}
+
+.formInputarea::placeholder {
+   @apply text-lead font-quicksand font-normal leading-[2.4rem] text-[1.5rem];
+   @screen laptop {
+      font-size: calc(1.8rem * var(--scale));
+   }
+}
+
+.containertextarea {
+   @screen laptop {
+      padding-top: calc(0.4rem * var(--scale));
+   }
+}
+
+.inputselect {
+   @apply text-lead font-quicksand font-normal leading-[2.4rem] text-[1.5rem];
+   @screen laptop {
+      font-size: calc(1.8rem * var(--scale));
+   }
+}
+
+.icons-select {
+   @apply absolute right-[1rem] top-[2rem] text-[1rem] text-[#A6A6A6];
+   @screen laptop {
+      top: calc(2rem * var(--scale));
+   }
+}

@@ -1,0 +1,111 @@
+.HomeAbout {
+   /* @apply py-[4.8rem] bg-slate-700; */
+
+   @apply bg-blue;
+   @screen laptop {
+      @apply bg-[url('/why.png')] bg-cover bg-no-repeat bg-transparent relative z-20;
+      margin-top: calc(-6rem * var(--scale));
+      padding-bottom: calc(9rem * var(--scale));
+      padding-top: calc(5rem * var(--scale));
+      filter: drop-shadow(0px 4px 40px rgba(87, 152, 254, 0.5));
+   }
+}
+.HomeAbout-container {
+   z-index: 50;
+   position: relative;
+   @apply pt-[-2rem];
+   @screen laptop {
+      @apply grid grid-cols-2  gap-[12rem];
+      padding-bottom: calc(5rem * var(--scale));
+      line-height: calc(2.72rem * var(--scale));
+      gap: calc(12rem * var(--scale));
+   }
+   @screen desktop {
+      padding-top: calc(4rem * var(--scale));
+   }
+}
+
+.HomeAbout-containerText {
+   @apply flex flex-col gap-[0.8rem];
+   @screen laptop {
+      @apply justify-center;
+      padding-top: calc(5rem * var(--scale));
+   }
+}
+.HomeAbout-title {
+   @apply font-quicksand text-[1.4rem] font-semibold leading-[2.24rem] text-withes;
+   @screen laptop {
+      font-size: calc(1.7rem * var(--scale));
+      line-height: calc(2.72rem * var(--scale));
+   }
+}
+.HomeAbout-subtitle {
+   @apply font-outfit text-[2.5rem] font-bold leading-[3.15rem] text-withes;
+   @screen laptop {
+      font-size: calc(4rem * var(--scale));
+      line-height: calc(5.04rem * var(--scale));
+   }
+}
+.HomeAbout-vector {
+   @apply w-[6.809rem];
+   @screen laptop {
+      width: calc(8.139rem * var(--scale));
+   }
+}
+.HomeAbout-text {
+   @apply font-quicksand text-[1.5rem] font-medium leading-[2.4rem] text-withes;
+   @screen laptop {
+      font-size: calc(1.9rem * var(--scale));
+      line-height: calc(3.04rem * var(--scale));
+      padding-top: calc(1rem * var(--scale));
+   }
+}
+.HomeAbout-buttom {
+   @apply pt-[.5rem];
+   @screen laptop {
+      padding-top: calc(2rem * var(--scale));
+   }
+}
+.HomeAbout-image {
+   @apply w-[32.5rem] h-[19rem] overflow-hidden mt-[2.5rem] mx-auto;
+
+   @screen tablet {
+      @apply h-[35rem];
+   }
+   border-radius: 166.079px;
+   @screen tablet {
+      @apply w-[70%] mx-auto;
+      @screen laptop {
+         width: calc(68.5rem * var(--scale));
+         height: calc(53.4rem * var(--scale));
+         border-radius: 350px;
+      }
+   }
+}
+
+.HomeAbout-relative {
+   @apply relative;
+}
+.HomeAbout-abouttop {
+   @apply absolute top-[-6rem] w-full;
+   filter: drop-shadow(0px 4px 40px rgba(87, 152, 254, 0.5));
+
+   @screen tablet {
+      @apply top-[-8rem];
+   }
+   @screen laptop {
+      @apply hidden;
+   }
+}
+
+.HomeAbout-aboutbottom {
+   @apply absolute bottom-[-5rem] w-full;
+   filter: drop-shadow(0px 4px 40px rgba(87, 152, 254, 0.5));
+
+   @screen tablet {
+      @apply bottom-[-7rem];
+   }
+   @screen laptop {
+      @apply hidden;
+   }
+}

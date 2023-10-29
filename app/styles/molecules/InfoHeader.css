@@ -1,0 +1,38 @@
+.InfoHeader-container {
+   @apply hidden;
+
+   @screen laptop {
+      @apply block bg-blue;
+      height: calc(4.4rem * var(--scale));
+   }
+}
+
+.InfoHeader-con {
+   @screen laptop {
+      @apply h-full flex justify-between items-center  mx-auto;
+      width: 78.2%;
+   }
+}
+.InfoHeader-ul {
+   @apply flex  gap-[.5rem];
+}
+
+.InfoHeader-a {
+   @screen laptop {
+      @apply block font-outfit font-normal text-withes;
+      font-size: calc(1.6rem * var(--scale));
+      line-height: calc(0.9rem * var(--scale));
+   }
+}
+.InfoHeader-li {
+   a {
+      @apply flex   items-center;
+      gap: calc(1.2rem * var(--scale));
+   }
+}
+.InfoHeader-social {
+   i {
+      font-size: calc(2.5rem * var(--scale));
+      @apply text-withes;
+   }
+}

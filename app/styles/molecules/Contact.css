@@ -1,0 +1,81 @@
+.contact {
+   @screen laptop {
+      @apply bg-[url('/form.png')] bg-contain bg-no-repeat bg-center;
+   }
+   @screen desktop {
+      @apply bg-center;
+   }
+
+   &-container {
+      @screen laptop {
+         @apply flex;
+         padding-top: calc(7.4rem * var(--scale));
+         padding-bottom: calc(1rem * var(--scale));
+         gap: calc(5rem * var(--scale));
+         margin-bottom: calc(8rem * var(--scale));
+      }
+
+      @screen desktop {
+         @apply flex;
+         padding-top: calc(7.4rem * var(--scale));
+         padding-bottom: calc(7rem * var(--scale));
+         gap: calc(5rem * var(--scale));
+         margin-bottom: calc(2.5rem * var(--scale));
+      }
+   }
+   &-breadCumbMenu {
+      @apply pt-[2.8rem] pb-[1.9rem];
+      @screen laptop {
+         padding-top: calc(5.3rem * var(--scale));
+         padding-bottom: 0px;
+      }
+   }
+   &-conten {
+      @apply flex flex-col gap-[.2rem]  pb-[1.2rem];
+      @screen tablet {
+         @apply gap-[.3rem];
+      }
+      @screen laptop {
+         border-radius: 20px;
+         border: 1px solid #c9c9c9;
+         background: #ffffff;
+         padding-top: calc(5rem * var(--scale));
+         padding-left: calc(5.3rem * var(--scale));
+         padding-right: calc(5.2rem * var(--scale));
+         padding-bottom: calc(3rem * var(--scale));
+         width: calc(78rem * var(--scale));
+      }
+   }
+   &-title {
+      @apply font-quicksand text-[1.4rem] leading-[2.24rem] font-semibold text-blue;
+      @screen laptop {
+         font-size: calc(1.7rem * var(--scale));
+         line-height: calc(2.72rem * var(--scale));
+      }
+   }
+   &-subtitle {
+      @apply font-outfit text-[2.5rem] leading-[3.15rem] text-black2 font-bold;
+      @screen laptop {
+         font-size: calc(4rem * var(--scale));
+         line-height: calc(5.04rem * var(--scale));
+      }
+   }
+   &-text {
+      @apply text-[1.5rem] leading-[2.55rem] text-[#696969] font-light font-roboto;
+      @screen laptop {
+         @apply font-quicksand  font-light;
+         font-size: calc(1.9rem * var(--scale));
+         line-height: calc(3.04rem * var(--scale));
+         color: #606060;
+      }
+   }
+
+   &-maps {
+      @apply hidden;
+      @screen laptop {
+         @apply block overflow-hidden ml-auto;
+         border-radius: 20px;
+         width: calc(62.1rem * var(--scale));
+      }
+   }
+}

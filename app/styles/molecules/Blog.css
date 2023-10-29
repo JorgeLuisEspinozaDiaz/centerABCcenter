@@ -1,0 +1,98 @@
+.blogDetails {
+   @apply pt-[2.8rem];
+
+   &-containerprin {
+      @screen laptop {
+         @apply grid;
+         grid-template-columns: 66% auto;
+         gap: calc(4rem * var(--scale));
+         padding-top: calc(4rem * var(--scale));
+         padding-bottom: calc(11rem * var(--scale));
+      }
+   }
+   &-breadCumbMenu {
+      @apply pb-[1.5rem];
+      @screen laptop {
+         padding-top: calc(5.3rem * var(--scale));
+      }
+   }
+
+   &-conta {
+      @apply border-b border-[#ECECEC];
+      @screen laptop {
+         @apply border-r border-[#ECECEC] border-b-0;
+         padding-right: calc(4rem * var(--scale));
+      }
+   }
+   &-image {
+      @apply overflow-hidden;
+      border-radius: 20px;
+   }
+   &-date {
+      @apply flex gap-[1rem] items-center pt-[1.2rem] pb-[.9rem];
+      @screen laptop {
+         padding-top: calc(2.6rem * var(--scale));
+         padding-bottom: calc(1.2rem * var(--scale));
+      }
+      i {
+         @apply text-[1.5rem] text-lead;
+         @screen laptop {
+            font-size: calc(2rem * var(--scale));
+         }
+      }
+      span {
+         @apply text-[1.4rem] text-lead font-quicksand leading-[2.24rem];
+         @screen laptop {
+            font-size: calc(1.9rem * var(--scale));
+            line-height: calc(3.04rem * var(--scale));
+         }
+      }
+   }
+   &-title {
+      @apply font-outfit text-[3rem] leading-[3.78rem] font-bold text-black;
+      @screen laptop {
+         font-size: calc(3rem * var(--scale));
+         line-height: calc(3.78rem * var(--scale));
+      }
+   }
+   &-content {
+      @apply flex flex-col gap-[1rem] pt-[1.5rem] pb-[4.3rem];
+      @screen laptop {
+         padding-top: calc(1.2rem * var(--scale));
+      }
+      p {
+         @apply font-quicksand text-[1.5rem] leading-[2.4rem] font-normal text-lead;
+         @screen laptop {
+            font-size: calc(1.9rem * var(--scale));
+            line-height: calc(3.04rem * var(--scale));
+         }
+      }
+   }
+
+   &-blog {
+      @apply flex flex-col justify-center items-center gap-[.5rem] pt-[5rem] pb-[3.1rem];
+      @screen laptop {
+         @apply hidden;
+      }
+   }
+
+   &-blogtitle {
+      @apply font-quicksand text-[1.4rem] leading-[2.24rem] font-semibold text-blue;
+   }
+
+   &-blogsubtitle {
+      @apply font-outfit text-[2.5rem] leading-[3.15rem] font-bold text-black2;
+   }
+   &-blogimg {
+      @apply w-[6.809rem];
+   }
+   &-containercard {
+      @apply grid grid-cols-1 gap-[1.7rem] pb-[5rem];
+      @screen tablet {
+         @apply grid-cols-2;
+      }
+      @screen laptop {
+         @apply flex flex-col pb-0;
+      }
+   }
+}

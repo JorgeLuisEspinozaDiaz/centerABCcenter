@@ -1,0 +1,70 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "Home",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "home_prin": {
+      "displayName": "home_prin",
+      "type": "component",
+      "repeatable": false,
+      "component": "section.home-prin"
+    },
+    "home_choose": {
+      "displayName": "home_choose",
+      "type": "component",
+      "repeatable": false,
+      "component": "section.home-choose"
+    },
+    "home_programs": {
+      "displayName": "home_programs",
+      "type": "component",
+      "repeatable": false,
+      "component": "section.home-programs"
+    },
+    "home_choose_two": {
+      "displayName": "home_choose_two",
+      "type": "component",
+      "repeatable": false,
+      "component": "section.home-choose-two"
+    },
+    "home_blog": {
+      "displayName": "home_blog",
+      "type": "component",
+      "repeatable": false,
+      "component": "section.home-blog"
+    },
+    "home_map": {
+      "displayName": "home_map",
+      "type": "component",
+      "repeatable": false,
+      "component": "section.home-map"
+    },
+    "seo": {
+      "displayName": "seo",
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "home_schedule": {
+      "displayName": "home_schedule",
+      "type": "component",
+      "repeatable": false,
+      "component": "section.home-schedule"
+    },
+    "home_list_schedule": {
+      "displayName": "home_list_schedule",
+      "type": "component",
+      "repeatable": true,
+      "component": "section.home-list-schedule"
+    }
+  }
+}
